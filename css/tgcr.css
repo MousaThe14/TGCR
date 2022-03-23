@@ -1,0 +1,305 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: black;
+}
+
+.first{
+	background-color: black;
+	height: auto;
+	padding-top:30px;
+}
+
+.second{
+	background-color: white;
+	height: auto;
+	margin-top: 0px;
+}
+
+.third{
+	height: auto;
+	background-color: black;
+	padding-bottom:50px;
+}
+
+.phone{
+	display: block;
+	margin: 0 auto;
+}
+
+.product1{
+	display: block;
+	margin: 0 auto;
+	float: left;
+}
+
+.people{
+	display: block;
+	padding-top: 30px;
+	padding-right: 20px;
+	float: right;
+}
+
+.text-big{
+	color: white;
+}
+
+.text-small{
+	font-size:22px;
+	color: #B2D9FF;
+}
+
+.card {
+	background-color: black;
+  color:white;
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  float:left;
+}
+
+.card2 {
+	background-color: black;
+  color:white;
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  float: right;
+  
+}
+
+.card3 {
+	background-color: black;
+  color:white;
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  float:left;
+  margin-left: 175px;
+}
+
+.products{
+  background-color: black;
+  width:100%
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #808080;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #808080;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.card3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #808080;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card3 button:hover {
+  opacity: 0.7;
+}
+
+.banner{
+min-height: 100%;
+min-width: 100%;
+margin: 0;	
+opacity: 0.25;
+}
+
+.fourth{
+	margin: 0px;
+background-color: black;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.apoloxwwf{
+	display: block;
+	margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  padding: 0px 0;
+}
+
+.btns {
+  float: right;
+  margin-right: 10px;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 40px;	
+	padding-top: 20px;
+	background: #1D4173;
+}
+
+.body2{
+	background-color: black;
+}
+
+h1{
+	color: #B2D9FF;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom:20px;
+}
+
+h2{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 70px;
+}
+
+h3{
+	color: #000000;
+	text-align: center;
+}
+
+h4{
+	color: #ffffff;
+	text-align: center;
+}
+
+h6{
+	color: #000000;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+nav {
+	position: sticky;
+	float: right;
+	padding-right: 50px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 60px;
+	padding-top: 6px;
+}
+
+nav a{
+	color: #B2D9FF;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+.pictures img:hover{
+	color: #FFFFFF;
+}
+
+.btns img:hover{
+filter: grayscale(10);  
+}
+
+fieldset
+{
+	
+	border: dashed 2px;
+	padding: 2%;
+	margin: 2%;
+
+}
+
+legend
+{
+	padding-left: 10px;
+	border: solid;
+	background-color: #728ab0;
+}
+
+.personal
+
+{
+	border: solid;
+	border-color: indigo;
+	margin: 1%;
+	padding: 2%;
+	background-color: #cfd6e3;
+}
+
+table {
+  empty-cells: hide;
+  background-color: #1D4173;
+}
+tbody
+{
+	margin-left: 5%;
+	margin-right: 5%;
+background-color: #1D4173;
+color: white;
+
+}
+input
+{
+
+	display: inline-block;
+	
+}
+
+label
+{
+	text-decoration: bold;
+}
