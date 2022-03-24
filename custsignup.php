@@ -31,19 +31,15 @@
 <?php
 require('db.php');
 
-if (isset($_REQUEST['username'])){
+if (isset($_REQUEST['username']))
+{
 
- $username = stripslashes($_REQUEST['username']);
-
- $username = mysqli_real_escape_string($conn,$username); 
- $firstname = stripslashes($_REQUEST['firstname']);
- $firstname = mysqli_real_escape_string($conn,$firstname);
- $lastname = stripslashes($_REQUEST['lastname']);
- $lastname = mysqli_real_escape_string($conn,$lastname);
+ $name = stripslashes($_REQUEST['name']);
+ $name = mysqli_real_escape_string($conn,$name); 
  $email = stripslashes($_REQUEST['email']);
  $email = mysqli_real_escape_string($conn,$email);
- $password = stripslashes($_REQUEST['password']);
- $password = mysqli_real_escape_string($conn,$password);
+ $studentid = stripslashes($_REQUEST['studentid']);
+ $studentid = mysqli_real_escape_string($conn,$studentid);
 $phone = stripslashes($_REQUEST['phone']);
 $phone = mysqli_real_escape_string($conn,$phone);
 $address = stripslashes($_REQUEST['address']);
@@ -64,7 +60,7 @@ $zipcode = mysqli_real_escape_string($conn,$zipcode);
 		
         if($result){
             echo "<div class='personal'>
-<h3>You are registered successfully.</h3>
+<h3>You are registered successfully. Welcome to the Trojan Gaming Club.</h3>
 <br/>Click here to <a href='custlogin.php'>Login</a></div>";
         }
     }else{ 
@@ -75,11 +71,9 @@ $zipcode = mysqli_real_escape_string($conn,$zipcode);
 <fieldset>
 <legend>User Info</legend><!-- Name and Login Info-->
 <form name="registration" action="" method="post">
-<input type="text" name="firstname" placeholder="First Name" required /><br>
-<input type="text" name="lastname" placeholder="Last Name" required /><br>
-<input type="text" name="username" placeholder="Username" required /><br>
+<input type="text" name="name" placeholder="Name" required /><br>
+<input type="text" name="studentid" placeholder="V00######" required /><br>
 <input type="email" name="email" placeholder="Email" required /><br>
-<input type="password" name="password" placeholder="Password" required /><br>
 
 </fieldset>
 
