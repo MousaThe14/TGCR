@@ -3,7 +3,7 @@
 $dbserver="localhost";
 $dbuser="root";
 $dbpw="";
-$dbname="apolo";
+$dbname="tgcr";
 $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
 
 if (mysqli_connect_errno())

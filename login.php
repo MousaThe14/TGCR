@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-with, initial-scale=1">
-	<meta name="Author" content="John Wright, Mousa Tour&eacute;">
+	<meta Name="viewport" content="width=device-with, initial-scale=1">
+	<meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	
 	<title>Trojan Gaming Club Membership Login</title>
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/groupproject.css" />
+	<link rel="stylesheet" href="css/tgcr.css" />
 
 </head>
 
@@ -30,17 +30,15 @@
 <?php
 require('db.php');
 
-if (isset($_REQUEST['studentid']))
-{
 
- $trn_date = date("Y-m-d H:i:s");
- $name = stripslashes($_REQUEST['name']);
- $name = mysqli_real_escape_string($conn,$name); 
- $studentid = stripslashes($_REQUEST['studentid']);
- $studentid = mysqli_real_escape_string($conn,$studentid);
+ $LoginTime = date("Y-m-d H:i:s");
+ $Name = stripslashes($_REQUEST['Name']);
+ $Name = mysqli_real_escape_string($conn,$Name); 
+ $StudentID = stripslashes($_REQUEST['StudentID']);
+ $StudentID = mysqli_real_escape_string($conn,$StudentID);
 
 
-        $query = "INSERT into `login` (trn_date, name, studentid) VALUES ('$trn_date', '$name', '$studentid')";
+        $query = "INSERT into `login` (LoginTime, Name, StudentID) VALUES ('$LoginTime', '$Name', '$StudentID')";
 		
         $result = mysqli_query($conn,$query);
 		
@@ -55,15 +53,15 @@ if (isset($_REQUEST['studentid']))
 
 <fieldset>
 <legend>Login Info</legend><!-- Name and Login Info-->
-<form name="login" action="" method="post">
-<input type="text" name="studentid" placeholder="V00######" required /><br>
-<input type="email" name="email" placeholder="Email" required /><br>
+<form Name="login" action="" method="post">
+<input type="text" Name="StudentID" placeholder="V00######" required /><br>
+<input type="text" Name="Name" placeholder="First and Last Name" required /><br>
 
 </fieldset>
 
 
 <fieldset>
-<input class="btn btn-primary" type="submit" name="submit" value="Login" /><br>
+<input class="btn btn-primary" type="submit" Name="submit" value="Login" /><br>
 
 
 </form>
