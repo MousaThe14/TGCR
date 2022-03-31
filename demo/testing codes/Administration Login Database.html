@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Administration Login Database</title>
+	<meta charset="UTF-8"/>
+  </head>
+  <body>
+  <div id="wrapper"> <!-- centers page content in the browser-->
+	<header>
+      <img src="SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
+    <h1>Trojan Gaming Club</h1>
+    </header>
+    <nav>
+      <ul class="nav"> 
+			<li><a href="Register.html">Register</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="Event Login.html">Event Login</a></li>&nbsp;&nbsp;&nbsp; <!-- &nbsp means non-breaking space which is a space that will not break into a new line-->
+            <li><a href="Admin Dashboard.html">Administration Dashboard</a></li>&nbsp;&nbsp;&nbsp;
+      </ul>
+    </nav>
+    <main>
+  <table>
+	<tr>
+	<th>Id</th>
+	<th>V-Number</th>
+	<th>Password</th>
+	</tr>
+	
+	</table>
+	<?php
+	$conn = mysqli_connect("localhost", "root", "","Trojan_Gaming_Club");
+	if ($conn-> connect_error){
+	  die("Connection Failed:" .$conn-> connect_error);
+	}
+	
+	$sql = "SELECT id, v-number, password from login";
+	$result = $connect-> query($sql);
+	
+	if ($result-> num_rows > 0){
+		while($row = $result-> fetch_assoc()){
+			echo "<tr><td>". $row["id"].""<tr><td>". $row["v-number"]."<tr><td>". $row["password"]."</td></tr>";
+		}
+		echo "</table>";
+	}
+	else{
+		echo"0 result";
+	}
+	
+	$conn-> close();
+	?>
+	
+	</table>
+	</body>
+	</html>
+	
+	

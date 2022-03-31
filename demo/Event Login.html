@@ -1,0 +1,81 @@
+<!-- This HTML creates a website for a coffee shop that as four different link pages which are styled using css.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Trojan Gaming Club</title>
+	<meta charset="UTF-8"/>
+  </head>
+  <body>
+	<div id="wrapper"> <!-- centers page content in the browser-->
+	<header>
+      <img src="SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
+    <h1>Trojan Gaming Club</h1>
+    </header>
+    <nav>
+      <ul class="nav"> 
+			<li><a href="index.html">Register</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="menu.html">Event Login</a></li>&nbsp;&nbsp;&nbsp; <!-- &nbsp means non-breaking space which is a space that will not break into a new line-->
+            <li><a href="event.html">Administration Dashboard</a></li>&nbsp;&nbsp;&nbsp;
+      </ul>
+    </nav>
+    <main>
+	
+    <h2>Member Registration</h2>
+
+<div class="container">
+<form action="" method="get" class="form-example">
+	<fieldset> <!--The <fieldset> tag draws a box around the related elements.-->
+	<legend>Login Details</legend> <!--The <legend> tag defines a caption for the <fieldset> element.-->
+  <div class="form-example">
+    <label for="name">User Name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <br>
+  <div class="form-example">
+    <label for="name">V-Number: </label>
+    <input type="text" name="v-number" id="v-number" required>
+  </div>
+  <br>
+  <div class="form-example">
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <br>
+  <p><strong>Would you like to contribute your console or games to club activities?.</strong></p>
+  <div>                                      
+  <input type="radio" id="I will" name="I_will" value="yes">
+  <label for="I will">Yes</label><br>
+  <input type="radio" id="I wont" name="I_wont" value="no">
+  <label for="I wont">No</label>
+  </div>
+  <br>
+  </fieldset>
+  <fieldset>
+  <legend>Additional Information</legend>
+  <h3>Contant Method</h3>
+	<input type="checkbox" name="Email" value="">
+	<label for="E-mail">E-mail</label>
+	<input type="checkbox" name="Whatsapp" value="">
+	<label for="Whatsapp">Whatsapp</label><br>
+	<input type="checkbox" name="Mobile" value="">
+	<label for="Mobil">Mobile</label>
+	<input type="checkbox" name="In app Chat" value="">
+	<label for="In app Chat">In app Chat</label>
+	</fieldset>
+ <br><br>
+	<button type="Submit request">Submit request</button> <!--The <button> tag defines a clickable button.-->
+	<button type="Clear Form">Clear Form</button>
+	<br><br/>
+	
+  </form>
+	<div>
+    <footer> <!--The <footer> tag defines a footer for a document or section.-->
+       Copyright &copy; 2021 City Coffee House
+      <br/>
+      <a href="">Micheal@Jacob.com</a>
+    <div>
+	</footer>
+	</main>
+</body>
+</html>

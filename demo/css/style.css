@@ -1,0 +1,114 @@
+body {
+  background: #FCEBB6;
+  /*background-image: url(video-game-seamless-background_6997-1230.jpeg);/* add the background image */
+    color: #221811;
+    font-family: Verdana, Arial, asans-serif;
+    padding-left: 10px;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+    font-weight: bold;
+    text-align: center;
+	display:flex; /*new*/
+	justify-content: center; /*new*/
+
+	/*max-width:100%;
+	max-height:100%
+	
+	max-width: 150px;
+	max-height: 150px;*/
+
+}
+  
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 30px;
+  list-style: none /*new*/
+}
+header {
+  background: #D2B48C;
+  font-family: radley, Hand, Cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  color: #8C3826;
+}
+header img {
+  text-align: left;
+  vertical-align: middle;
+  max-width: 150px;
+  max-height: 150px;
+  
+}
+header h1 {
+  margin-left: 10px;
+}
+h1 {
+  line-height: 200%;
+}
+h2 {
+  color: #8C3826;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  background: #D2B48C;
+  font-size: 0.60em;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0; /*new*/
+}
+
+#wrapper { /*An HTML wrapper allows you to center content within a webpage.*/
+  width: 80%;
+  margin: auto; /*CSS property sets the margin area on all four sides of an element.*/
+  min-width: 900px; /*CSS property sets the minimum width of an element.*/
+  max-width: 1280px; /*CSS property sets the maximum width of an element.*/
+  box-shadow: 3px 3px 3px #676767;
+  position: relative;
+  height: 100%;
+  min-height: 100vh; /*CSS property sets the minimum height of an element.*/
+}
+
+table ,th, td {
+  border: 1px solid black;
+  padding: 1px;
+  margin: 25px 0;
+  font-size:0.9em;
+  border-collapse: collapse;
+}
+th {
+  background-color: #D2B48C; /*CSS property sets the background color of an element.*/
+}
+tr:nth-child(odd) td{
+  background-color: #c99608;
+}
+tr:nth-child(even) td{
+  background-color: #ebd391;
+}
+
+textarea{
+	margin-left:60px;
+}
+
+.upevents {
+  width: 150%;
+  height: 150px;
+}
+
+	
