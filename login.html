@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta Name="viewport" content="width=device-with, initial-scale=1">
 	<meta Name="Author" content="John Wright, Mousa Tour&eacute;">
-	<meta http-equiv = "refresh" content = "2; url = login.html" />
 	
 	<title>Trojan Gaming Club Membership Login</title>
 	
@@ -27,34 +26,29 @@
     </div>
 </header>
 
+
+
 <h1>Login</h1>
 <div class="personal">
-<?php
-require('db.php');
 
-if (isset($_POST['Name'])){
+<fieldset>
+<legend>Login Info</legend><!-- Name and Login Info-->
+<form Name="login" action="login.php" method="post">
+<input type="text" Name="StudentID" placeholder="V00######" required /><br>
+<input type="text" Name="Name" placeholder="First and Last Name" required /><br>
 
- $LoginTime = date("Y-m-d H:i:s");
- $Name = stripslashes($_REQUEST['Name']);
- $Name = mysqli_real_escape_string($conn,$Name); 
- $StudentID = stripslashes($_REQUEST['StudentID']);
- $StudentID = mysqli_real_escape_string($conn,$StudentID);
+</fieldset>
 
 
-        $sql = "INSERT INTO eventlogin (LoginTime, Name, StudentID) VALUES ('$LoginTime', '$Name', '$StudentID')";
-		 
-        $result = mysqli_query($conn,$sql);
-		
-        if($result){
-            echo "<div class='personal'>
-<h3>You Are Logged Into Today's Events.</h3></div>";
-        }
-    }else{ 
-?>
+<fieldset>
+<input class="btn btn-primary" type="submit" Name="submit" value="Login" /><br>
 
+
+</form>
+</fieldset>
 
 </div>
-<?php } ?>
+
 
 	<footer>
 	</footer>
