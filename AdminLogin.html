@@ -1,0 +1,67 @@
+<!-- This HTML creates a website for a coffee shop that as four different link pages which are styled using css.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Trojan Gaming Club</title>
+	<meta charset="UTF-8"/>
+	<style>
+	fieldset{
+	
+		font-family: sans-serif;
+		font-weight: bold;
+		border-radius: 20px;
+	}
+	button{
+		background-color: powderblue;
+		border-radius: 20px;
+		font-family: sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+	}	
+	</style>
+  </head>
+  <body>
+	<div id="wrapper"> <!-- centers page content in the browser-->
+	<header>
+      <img src="SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
+    <h1>Trojan Gaming Club</h1>
+    </header>
+    <nav>
+      <ul class="nav"> 
+			<li><a href="Register.html">Register</a></li>&nbsp;&nbsp;&nbsp;
+            <li><a href="Event Login.html">Event Login</a></li>&nbsp;&nbsp;&nbsp; <!-- &nbsp means non-breaking space which is a space that will not break into a new line-->
+            <li><a href="Admin Dashboard.html">Administration Dashboard</a></li>&nbsp;&nbsp;&nbsp;
+      </ul>
+    </nav>
+    <main>
+	
+    <h2>Administration Login</h2>
+	<p>Please fill the following form<p/>
+	<form action= "connect.php" method="post">
+	<fieldset> <!--The <fieldset> tag draws a box around the related elements.-->
+	<legend>Login Details</legend> <!--The <legend> tag defines a caption for the <fieldset> element.-->
+	<div>
+	<label for="V-Number">V-Number:</label>
+	<input id="V-Number" name= "V-Number" type="text" size="79" placeholder="Enter V-Number" required>
+	</div>
+	<div>
+	<label for="Password">Password:</label>
+	<input id="Password" name= "Password" type="text" size="78" placeholder="Enter Password" required>
+	</div>
+	<br><br>
+	<button type="Submit request">Submit request</button> <!--The <button> tag defines a clickable button.-->
+	<button type="Clear Form">Clear Form</button>
+	<br><br/>
+	</fieldset>
+	</form/>
+	<div>
+    <footer> <!--The <footer> tag defines a footer for a document or section.-->
+       Copyright &copy; 2022 Trojan Gaming Club
+      <br/>
+      <a href="">TrojanGamingClub@VSU.com</a>
+    <div>
+	</footer>
+	</main>
+</body>
+</html>

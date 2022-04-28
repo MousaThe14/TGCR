@@ -1,305 +1,146 @@
-*{
-	margin: 0px;
-	padding: 0px;
+body {
+  background: #FCEBB6;
+  /*background-image: url(video-game-seamless-background_6997-1230.jpeg);/* add the background image */
+    color: #221811;
+    font-family: Verdana, Arial, asans-serif;
+    padding-left: 10px;
 }
+nav {
+    list-style-type: none;
+    position:absolute;
+    margin: 5;
+    padding: 5;
+	text-align: center;
+    font-weight: bold;
+    text-align: center;
+	display:flex; /*new*/
+	justify-content: center; /*new*/
+width: 100%;
+	/*max-width:100%;
+	max-height:100%
+	
+	max-width: 150px;
+	max-height: 150px;*/
 
-body{
-	background: black;
 }
-
-.first{
-	background-color: black;
-	height: auto;
-	padding-top:30px;
-}
-
-.second{
-	background-color: white;
-	height: auto;
-	margin-top: 0px;
-}
-
-.third{
-	height: auto;
-	background-color: black;
-	padding-bottom:50px;
-}
-
-.phone{
-	display: block;
-	margin: 0 auto;
-}
-
-.product1{
-	display: block;
-	margin: 0 auto;
-	float: left;
-}
-
-.people{
-	display: block;
-	padding-top: 30px;
-	padding-right: 20px;
-	float: right;
-}
-
-.text-big{
-	color: white;
-}
-
-.text-small{
-	font-size:22px;
-	color: #B2D9FF;
-}
-
-.card {
-	background-color: black;
-  color:white;
-  max-width: 300px;
-  text-align: center;
-  font-family: arial;
-  float:left;
-}
-
-.card2 {
-	background-color: black;
-  color:white;
-  max-width: 300px;
-  text-align: center;
-  font-family: arial;
-  float: right;
   
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+  list-style: none /*new*/
+}
+.nav ul {
+  display: inline-block;
+  font-size: 20px;
+  padding: 3px;
+  list-style: none /*new*/
+}
+.nav navbar {
+    text-align: center;
+    display:inline-block;
+
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 700;
+    align-items: center;
 }
 
-.card3 {
-	background-color: black;
-  color:white;
-  max-width: 300px;
-  text-align: center;
-  font-family: arial;
-  float:left;
-  margin-left: 175px;
-}
-
-.products{
-  background-color: black;
-  width:100%
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #808080;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-.card2 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #808080;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card2 button:hover {
-  opacity: 0.7;
-}
-
-.card3 button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #808080;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card3 button:hover {
-  opacity: 0.7;
-}
-
-.banner{
-min-height: 100%;
-min-width: 100%;
-margin: 0;	
-opacity: 0.25;
-}
-
-.fourth{
-	margin: 0px;
-background-color: black;
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  transform: translate(-50%, -50%);
-}
-
-.apoloxwwf{
-	display: block;
-	margin: 0 auto;
-}
-
-.logo {
-  float: left;
-  padding: 0px 0;
-}
-
-.btns {
-  float: right;
-  margin-right: 10px;
-}
 
 header {
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 40px;	
-	padding-top: 20px;
-	background: #1D4173;
+  background: #D2B48C;
+  font-family: radley, Hand, Cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  color: #8C3826;
 }
-
-.body2{
-	background-color: black;
+header img {
+  text-align: left;
+  vertical-align: middle;
+  max-width: 150px;
+  max-height: 150px;
+  
 }
-
-h1{
-	color: #B2D9FF;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom:20px;
+header h1 {
+  margin-left: 10px;
 }
-
-h2{
-	color: #ffffff;
-	text-align: center;
-	padding-top: 70px;
+h1 {
+  line-height: 200%;
 }
-
-h3{
-	color: #000000;
-	text-align: center;
-}
-
-h4{
-	color: #ffffff;
-	text-align: center;
-}
-
-h6{
-	color: #000000;
-	text-align: center;
-	padding-top: 5px;
+h2 {
+  color: #8C3826;
 }
 
 
-nav {
-	position: sticky;
-	float: right;
-	padding-right: 50px;
+footer {
+  text-align: center;
+  background: #D2B48C;
+  font-size: 0.60em;
+  font-style: italic;
+  bottom: 0;
+  width: 100%;
+  margin: 0; /*new*/
 }
 
-nav ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
+#wrapper { /*An HTML wrapper allows you to center content within a webpage.*/
+  width: 80%;
+  margin: auto; /*CSS property sets the margin area on all four sides of an element.*/
+
+  max-width: 1280px; /*CSS property sets the maximum width of an element.*/
+  box-shadow: 3px 3px 3px 3px #676767;
+  position: relative;
+  height: 100%;
+  padding-left:3%;
+  min-height: 100vh; /*CSS property sets the minimum height of an element.*/
 }
 
-nav li {
-	display: inline-block;
-	margin-left: 60px;
-	padding-top: 6px;
+table ,th, td {
+  border: 2px solid black;
+  padding: 1px;
+  margin: 10px 0;
+  font-size:0.9em;
+  border-collapse: collapse;
+  margin-left:25%; 
+  margin-right:25%;
+}
+th {
+  background-color: #D2B48C; /*CSS property sets the background color of an element.*/
+}
+tr:nth-child(odd) td{
+  background-color: #c99608;
+}
+tr:nth-child(even) td{
+  background-color: #ebd391;
 }
 
-nav a{
-	color: #B2D9FF;
-	text-decoration: none;
+.pagetitle{
+  text-align: center;
+  align-items: center;
 }
 
-nav a:hover{
-	color: #FFFFFF;
-}
-
-.pictures img:hover{
-	color: #FFFFFF;
-}
-
-.btns img:hover{
-filter: grayscale(10);  
-}
-
-fieldset
-{
-	
-	border: dashed 2px;
+.fieldsetborder{
+  	border: solid;
+  margin: 1%;
 	padding: 2%;
-	margin: 2%;
-
+	  		font-family: sans-serif;
+  		font-weight: bold;
+  		border-radius: 20px;
+  
 }
-
-legend
-{
-	padding-left: 10px;
-	border: solid;
-	background-color: #728ab0;
-}
-
-.personal
-
-{
-	border: solid;
-	border-color: indigo;
-	margin: 1%;
-	padding: 2%;
-	background-color: #cfd6e3;
-}
-
-table {
-  empty-cells: hide;
-  background-color: #1D4173;
-}
-tbody
-{
-	margin-left: 5%;
-	margin-right: 5%;
-background-color: #1D4173;
-color: white;
-
-}
-input
-{
-
-	display: inline-block;
 	
-}
-
-label
-{
-	text-decoration: bold;
-}
+	button{
+		background-color: powderblue;
+		border-radius: 20px;
+		font-family: sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+	}	
