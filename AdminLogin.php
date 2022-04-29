@@ -1,4 +1,6 @@
 <!-- This HTML creates a website for a coffee shop that as four different link pages which are styled using css.-->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
 	  <meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	  <meta charset="UTF-8"/>
 	  
-	  	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	  <link rel="stylesheet" href="css/bootstrap.min.css" />
   	<link rel="stylesheet" href="css/tgcr.css" />
   	
   	
@@ -23,17 +25,17 @@
   </head>
   
   
-  
   <body>
-    
     <header>
       <img src="SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
     <h1>Trojan Gaming Club</h1>
-  </header>
-  
-  
-<div id="wrapper">  
-  <div class="container">
+    </header>
+    
+    
+    
+	<div id="wrapper"> <!-- centers page content in the browser-->
+	
+ <div class="container">
     <nav class="navbar navbar-expand-lg">
       <ul class="navbar-nav"> 
       
@@ -55,59 +57,73 @@
     </nav>
     </div>
     
+    
     <main>
 	
-    <h2 class="">Member Registration</h2>
+    <h2>Administration Login</h2>
+    
+    
+    <div class="container">
 
-<div class="container">
-   
-<?php
-require('db.php');
+  	  	
+  	<fieldset class="fieldsetborder">
+    <?php
+    require('db.php');
+session_start();
+
+
+$dbserver="localhost";
+$dbuser="root";
+$dbpw="";
+$dbname="tgcr";
+$conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
+
+
 
 if (isset($_POST['VNumber'])){
 
- $FirstName = stripslashes($_REQUEST['FirstName']);
- $FirstName = mysqli_real_escape_string($conn,$FirstName); 
-  $LastName = stripslashes($_REQUEST['LastName']);
- $LastName = mysqli_real_escape_string($conn,$LastName); 
  $VNumber = stripslashes($_REQUEST['VNumber']);
+
  $VNumber = mysqli_real_escape_string($conn,$VNumber);
-  $Phone = stripslashes($_REQUEST['Phone']);
- $Phone = mysqli_real_escape_string($conn,$Phone);
-   $Email = stripslashes($_REQUEST['Email']);
- $Email = mysqli_real_escape_string($conn,$Email);
- $InventoryContributor= $_REQUEST['InventoryContributor'];
-
- $ContactPhone= $_REQUEST['ContactPhone'];
+ $Password = stripslashes($_REQUEST['Password']);
+ $Password = mysqli_real_escape_string($conn,$Password);
  
- $ContactEmail= $_REQUEST['ContactEmail'];
-
  
 
+        $query = "SELECT VNumber, Password FROM admin WHERE VNumber='$VNumber'
+and Password='".md5($Password)."'";
+ 
+ $result = mysqli_query($conn,$query) or die(mysqli_error($conn));
+ $rows = mysqli_num_rows($result);
+        if($rows==1){
+     $_SESSION['VNumber'] = $VNumber;
 
-        $sql = "INSERT INTO member(VNumber, FirstName, LastName, Email, Phone, InventoryContributor, ContactPhone, ContactEmail) VALUES ('$VNumber', '$FirstName', '$LastName', '$Email', '$Phone', '$InventoryContributor', '$ContactPhone', '$ContactEmail')";
-		 
-        $result = mysqli_query($conn,$sql);
-		
-        if($result){
-            echo "<div class='personal'>
-<h3>You Have Successfully Registered To The Club.</h3></div>";
-        }
-    }else{ echo "Error: " . $sql . "<br>" . $conn->error;
-?>
+     header("Location: AdminDashboard/AdminDashboard.php");
+         }else{
+ echo "<div><br/>VNumber or Password are incorrect</div>";
+ }
+ 
+} ?>
 
 
-</div>
-<?php } ?>
+  	</fieldset>
+	
+	
+	
+	
+	
+	</main>
+	</div>
 
-
-		</div>
-			</main>
-		
-	    <footer> <!--The <footer> tag defines a footer for a document or section.-->
+      
+	    <footer class="container-fluid"> <!--The <footer> tag defines a footer for a document or section-->
        Copyright &copy; 2022 Trojan Gaming Club
       <br/>
       <a href="">TrojanGamingClub@VSU.com</a>
-	</footer>
-</body>
+	  </footer>
+	
+	  <script src="js/jquery.min.js"> </script>
+    <script src="js/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

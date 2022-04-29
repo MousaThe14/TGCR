@@ -5,7 +5,7 @@
     <meta Name="viewport" content="width=device-with, initial-scale=1">
 	  <meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	  <meta charset="UTF-8"/>
-	  	<meta http-equiv = "refresh" content = "10; url = EventLogin.html" />
+	  	<meta http-equiv = "refresh" content = "2; url = EventLogin.html" />
 	  
 	  	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/tgcr.css" />
@@ -36,7 +36,7 @@
           
             
         <li="nav-item">
-          <a href="AdminDashboard.html">Administration Dashboard</a>
+          <a href="AdminLogin.html">Administration Dashboard</a>
           </li>
           
       </ul>
@@ -74,10 +74,10 @@ if (isset($_POST['VNumber'])){
 <?php } ?>
 
 
-	</main>
-	</div>
 
-      
+
+	</main>
+      	</div>
 	    <footer class="container-fluid"> 
        Copyright &copy; 2022 Trojan Gaming Club
       <br/>

@@ -6,8 +6,8 @@
 	  <meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	  <meta charset="UTF-8"/>
 	  
-	  	<link rel="stylesheet" href="css/bootstrap.min.css" />
-  	<link rel="stylesheet" href="css/tgcr.css" />
+	  	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+  	<link rel="stylesheet" href="../css/tgcr.css" />
   	
   	
   	<title>Trojan Gaming Club</title>
@@ -27,7 +27,7 @@
   <body>
     
     <header>
-      <img src="SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
+      <img src="../SchoolLogo.png" alt="logocup" align="left"height="125" width="125";/> <!-- add image to the left of webpage with a width of 150 and height of 150.-->
     <h1>Trojan Gaming Club</h1>
   </header>
   
@@ -60,22 +60,10 @@
     <h2 class="">Member Registration</h2>
 
 <div class="container">
-<form action="Register.php" method="post" class="">
+<form action="AdminRegister.php" method="post" class="">
 	<fieldset class="fieldsetborder"> <!--The <fieldset> tag draws a box around the related elements.-->
   	<legend>Registration Information</legend> <!--The <legend> tag defines a caption for the <fieldset> element.-->
-  	
-    <div class="form-group">
-      <label for="FirstName">First Name: </label>
-      <input id="FirstName" name= "FirstName" type="text" placeholder="Enter First Name" required />
-    </div>
-    <br>
-    
-      <div class="form-group">
-      <label for="LastName">Last Name: </label>
-      <input id="LastName" name= "LastName" type="text" placeholder="Enter Last Name" required />
-    </div>
-    
-    <br>
+  
   
   <div class="form-group">
     <label for="VNumber">V-Number: </label>
@@ -85,37 +73,14 @@
   <br>
   
   <div class="form-group">
-    <label for="email">School Email: </label>
-    <input type="Email" name="Email" id="Email" size="25%" placeholder="Enter Email" required/>
+    <label for="Password">Password: </label>
+    <input type="Password" name="Password" id="Password" size="25%" placeholder="Enter Password" required/>
   </div>
   
   <br>
   
-  
-  <div class="form-group">
-    <label for="phone">Phone: </label>
-    <input type="Phone" name="Phone" id="Phone" size="15%" placeholder="##########"/>
-  </div>
-  
-  <br>
-  
-  <p><strong>Would you like to contribute your console or games to club activities?</strong></p>
-  <div>                                      
-  <input type="radio" id="InventoryContributor" name="InventoryContributor" value="1">
-  <label for="InventoryContributor">Yes</label><br>
-  <input type="radio" id="InventoryContributor" name="InventoryContributor" value="0">
-  <label for="InventoryContributor">No</label>
-  </div>
-  
-  <br>
-  </fieldset>
-  <fieldset class="fieldsetborder">
-  <legend>Additional Information</legend>
-  <h5>Preferred Contant Method</h5>
-	<input type="checkbox" id="ContactEmail" name="ContactEmail" value="1">
-	<label for="ContactEmail">E-mail</label>
-	<input type="checkbox" id="ContactPhone" name="ContactPhone" value="1">
-	<label for="ContactPhone">Mobile</label>
+
+
 	</fieldset>
 	<br>
 	<button type="Submit">Submit</button> <!--The <button> tag defines a clickable button.-->
