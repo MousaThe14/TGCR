@@ -31,12 +31,7 @@ include("auth.php");
         padding-left: 15px;
 		
       }
-      label {
-        font-size: 15px;
-		font-family: sans-serif;
-		font-weight: bold;
-		
-      }
+
 
      
 	</style>
@@ -83,7 +78,7 @@ include("auth.php");
       	
 
             <div class="Inventory_details">
-                <table style="width:50%"align="center">
+                <table class="table table-bordered" style="width:50%"align="center">
                     <thead>  <!--The <thead> tag is used to group header content in an HTML table.-->
                         <tr>
                             <th><strong>Console</strong></th>
@@ -128,7 +123,7 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
 	
 				<br><br><br><br><br>
 	
-        <form class="form-inline">
+        <form action="AddInventory.php" method="post" class="form-inline">
           <div id="input">
             <!-- adding input types -->
             <div class="input1">
@@ -149,6 +144,7 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
           
           <!-- adding button -->
           <button id="button1">Add</button>
+          </form>
 	</fieldset>
 	
 	
