@@ -11,6 +11,7 @@ include("auth.php");
     <meta Name="viewport" content="width=device-with, initial-scale=1">
 	  <meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	  <meta charset="UTF-8"/>
+	  <meta http-equiv = "refresh" content = "2; url = Membership.html" />
 	  
 	  	<link rel="stylesheet" href="../css/bootstrap.min.css" />
   	<link rel="stylesheet" href="../css/tgcr.css" />
@@ -44,17 +45,17 @@ include("auth.php");
       <ul class="navbar-nav"> 
       
 			  <li="nav-item">
-			    <a href="Register.html">../Register</a>
+			    <a href="../Register.html">Register</a>
 			  </li>
 			  
         <li="nav-item">
-          <a href="EventLogin.html">../Event Login</a>
+          <a href="../EventLogin.html">Event Login</a>
           </li>
           
             <!-- &nbsp means non-breaking space which is a space that will not break into a new line-->
             
         <li="nav-item">
-          <a href="AdminLogin.html">../Administration Dashboard</a>
+          <a href="../AdminLogin.html">Administration Dashboard</a>
           </li>
           
       </ul>
@@ -84,6 +85,8 @@ if (isset($_POST['VNumber'])){
  $Email = mysqli_real_escape_string($conn,$Email);
  $InventoryContributor= $_REQUEST['InventoryContributor'];
  $Admin= $_REQUEST['Admin'];
+ 
+ 
  $ContactPhone= $_REQUEST['ContactPhone'];
  
  $ContactEmail= $_REQUEST['ContactEmail'];

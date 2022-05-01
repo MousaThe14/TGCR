@@ -34,14 +34,15 @@ require('db.php');
 
 if (isset($_POST['Name'])){
 
- $LoginTime = date("Y-m-d H:i:s");
- $Name = stripslashes($_REQUEST['Name']);
- $Name = mysqli_real_escape_string($conn,$Name); 
+ $LoginDate = date("Y-m-d);
+  $LoginTime = date("H:i:s");
+ $FirstName = stripslashes($_REQUEST['FirstName']);
+ $FirstName = mysqli_real_escape_string($conn,$FirstName); 
  $StudentID = stripslashes($_REQUEST['StudentID']);
  $StudentID = mysqli_real_escape_string($conn,$StudentID);
 
 
-        $sql = "INSERT INTO eventlogin (LoginTime, Name, StudentID) VALUES ('$LoginTime', '$Name', '$StudentID')";
+        $sql = "INSERT INTO eventlogin (LoginDate,LoginTime, FirstName, StudentID) VALUES ('$LoginDate', 'LoginTime', '$FirstName', '$StudentID')";
 		 
         $result = mysqli_query($conn,$sql);
 		

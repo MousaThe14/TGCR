@@ -83,7 +83,7 @@ $VNumber = stripslashes($_REQUEST['VNumber']);
         if($result){
             echo "<div class='personal'>
 <h3>You are registered successfully.</h3>
-<br/>Click here to <a href='./AdminLogin.html'>Login</a></div>";
+<br/>Click here to <a href='../AdminLogin.html'>Login</a></div>";
     }else{ echo "Error: " . $query . "<br>" . $conn->error;
 ?>
 <?php } ?>

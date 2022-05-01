@@ -77,7 +77,8 @@ if (isset($_POST['VNumber'])){
    $Email = stripslashes($_REQUEST['Email']);
  $Email = mysqli_real_escape_string($conn,$Email);
  $InventoryContributor= $_REQUEST['InventoryContributor'];
-
+ $ContactPhone = 0;
+  $ContactEmail = 0;
  $ContactPhone= $_REQUEST['ContactPhone'];
  
  $ContactEmail= $_REQUEST['ContactEmail'];
