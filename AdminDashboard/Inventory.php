@@ -89,6 +89,7 @@ include("auth.php");
                     </thead>
 				
 				<tbody>
+				
           <?php
           
           
@@ -127,18 +128,30 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
           <div id="input">
             <!-- adding input types -->
             <div class="input1">
-              <label for="console">Console</label><br />
-              <input type="text" name="console" id="console" placeholder ="Enter your console name" required>
+              <label for="Model">Console</label><br />
+              <select type="text" name="Model" id="Model" placeholder ="Select Console" required >
+              
+              <option value="Switch">Nintendo Switch</option>
+			<option value="Wii">Wii</option>
+			<option value="Wii U">Wii U</option>
+			<option value="Xbox One">Xbox One</option>
+			<option value="Xbox Series X">Xbox Series X</option>
+			<option value="Xbox Series S">Xbox Series S</option>
+			<option value="PS3">Playstation 3</option>
+			<option value="PS4">Playstation 4</option>
+			<option value="PS5">Playstation 5</option>
+			<option value="PC">Gaming PC</option>
+              </select>
             </div>
             <!-- adding input types -->
             <div class="input1">
-              <label for="ID">V-Number</label><br />
-              <input type="text" id="ID" name="ID" placeholder ="Enter your V-number" required>
+              <label for="VNumber">V-Number</label><br />
+              <input type="text" id="VNumber" name="VNumber" placeholder ="Enter your V-number" required/>
             </div>
             <!-- adding input types -->
             <div class="input1">
-              <label for="controllers">Controllers</label><br />
-              <input type="number" name="controllers" id="controllers" placeholder ="Enter controller donation" required>
+              <label for="Controllers">Controllers</label><br />
+              <input type="number" name="Controllers" id="Controllers" placeholder ="Number of Controllers" required/>
             </div>
           </div>
           

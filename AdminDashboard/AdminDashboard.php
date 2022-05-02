@@ -70,13 +70,13 @@ include("auth.php");
 	  
 	<p>Welcome, <?php echo $_SESSION['VNumber'];?>. <br> Select from the following.</p>
   <br>
-	<p><a class="btn btn-light" href="Membership.html" role="button" type="link">Manage Membership</a>
+	<p><a class="btn btn-light" href="Membership.php" role="button" type="link">Manage Membership</a>
 	<br> <!--The <button> tag defines a clickable button.-->
 	
 	<p><a class="btn btn-light" href="Inventory.php" role="button  type="link"">Manage Equipment</a>
 	<br>
 	
-	<p><a class="btn btn-light" href="Attendance.html" role="button type="link"">View Attendance Logs</a>
+	<p><a class="btn btn-light" href="Attendance.php" role="button type="link"">View Attendance Logs</a>
 	<br><br><br>
 	
 	<a class="btn btn-light" href="logout.php" role="button" type="logout">Log Out</a> <!--The <button> tag defines a clickable button.-->
