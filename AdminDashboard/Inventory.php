@@ -111,8 +111,8 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
                 <td align="center"><?php echo $row["Model"]; ?></td>
                 <td align="center"><?php echo $row["VNumber"]; ?></td>
                 <td align="center"><?php echo $row["Controllers"]; ?></td>
-                <td align="center"><a href="edit.php?id=<?php echo $row["VNumber"]; ?>">Edit</a>
-                <a href="delete.php?id=<?php echo $row["VNumber"]; ?>">Delete</a>
+                <td align="center"><a href="edit.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Edit</a>
+                <a href="delete.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Delete</a>
                 </td>
               </tr>
               <?php }?>

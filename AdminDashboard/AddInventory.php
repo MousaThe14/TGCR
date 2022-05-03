@@ -11,7 +11,7 @@ include("auth.php");
     <meta Name="viewport" content="width=device-with, initial-scale=1">
 	  <meta Name="Author" content="John Wright, Mousa Tour&eacute;">
 	  <meta charset="UTF-8"/>
-	  	<meta http-equiv = "refresh" content = "2; url = Inventory.html" />
+	  	<meta http-equiv = "refresh" content = "1; url = Inventory.php" />
 	  	
 	  	<link rel="stylesheet" href="../css/bootstrap.min.css" />
   	<link rel="stylesheet" href="../css/tgcr.css" />

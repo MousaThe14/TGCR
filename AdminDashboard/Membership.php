@@ -96,8 +96,8 @@ include("auth.php");
     <main>
       	<fieldset class="fieldsetborder"> 
       	
-            <div class="Inventory_details">
-                <table class="table-bordered" style="width:50%"align="center">
+            <div class="Inventory_details" content-align="center">
+                <table class="table-bordered container-fluid" style="width:50%"align="center">
                     <thead>  <!--The <thead> tag is used to group header content in an HTML table.-->             <tr>
                             <th>V-Number</th>
                             <th>First Name</th>
@@ -138,8 +138,8 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
                 <td align="center"><?php echo $row["InventoryContributor"]; ?></td>
                 <td align="center"><?php echo $row["ContactEmail"]; ?></td>
                 <td align="center"><?php echo $row["ContactPhone"]; ?></td>
-                <td align="center"><a href="edit.php?id=<?php echo $row["VNumber"]; ?>">Edit</a>
-                <a href="delete.php?id=<?php echo $row["VNumber"]; ?>">Delete</a>
+                <td align="center"><a href="edit.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Edit</a>
+                <a href="delete.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Delete</a>
                 </td>
               </tr>
               <?php }?>

@@ -39,9 +39,11 @@ CREATE TABLE EventLogin (
   
   
   CREATE TABLE `Games`(
-  `VNumber` varchar(9) NOT NULL,
-  `Title` varchar(50) NOT NULL,
-  `Console` varchar(20) NOT NULL,
+	VNumber varchar(9) NOT NULL,
+	Title varchar(50) NOT NULL,
+	Console varchar(20) NOT NULL,
+	PVPorPVE varchar(3),
+	Genre varchar(50),
 	PRIMARY KEY (`VNumber`,`Title`),
 	FOREIGN KEY (`VNumber`) REFERENCES `Member` (`VNumber`)
 )
