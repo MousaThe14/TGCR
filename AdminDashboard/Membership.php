@@ -138,8 +138,8 @@ $conn=mysqli_connect($dbserver,$dbuser,$dbpw,$dbname);
                 <td align="center"><?php echo $row["InventoryContributor"]; ?></td>
                 <td align="center"><?php echo $row["ContactEmail"]; ?></td>
                 <td align="center"><?php echo $row["ContactPhone"]; ?></td>
-                <td align="center"><a href="edit.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Edit</a>
-                <a href="delete.php?table=consoles&id=<?php echo $row["VNumber"]; ?>">Delete</a>
+                <td align="center"><a href="edit.php?table=member&id=<?php echo $row["VNumber"]; ?>">Edit</a>
+                <a href="delete.php?table=member&id=<?php echo $row["VNumber"]; ?>">Delete</a>
                 </td>
               </tr>
               <?php }?>
